@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+
+    <link rel="shortcut icon" href="/images/###.ico">
     <title>Coffee Survey</title>
+
   </head>
+
   <body>
-    
+    <form id="form-master" action="index.html" method="post">
+      <legend>Coffee Survey</legend>
+
+      <fieldset  class="fieldset" id="info">
+        <label for="name">name</label>
+        <input type="text" name="name">
+
+        <label for="email">email</label>
+        <input type="email" name="email">
+
+        <label for="phone">phone number</label>
+        <input type="tel" name="email">
+      </fieldset>
+
+      <fieldset class="fieldset" id="coffee-type">
+        <input type="radio" name="espresso">
+        <label for="espresso">espresso</label>
+
+        <input type="radio" name="americano">
+        <label for="americano">americano</label>
+
+        <input type="radio" name="cappucino">
+        <label for="cappucino">cappucino</label>
+
+        <input type="radio" name="mocha">
+        <label for="mocha">mocha</label>
+
+        <input type="radio" name="latte">
+        <label for="latte">latte</label>
+      </fieldset>
+
+      <fieldset class="fieldset" id="additives">
+
+        <input type="checkbox" name="vehicle" value="sugar">sugar
+
+        <input type="checkbox" name="vehicle" value="sweetener">sweetener
+
+        <input type="checkbox" name="vehicle" value="cream" checked>cream
+
+      </fieldset>
+
+      <fieldset class="fieldset" id="size">
+
+          <input type="radio" name="small">
+          <label for="small">small</label>
+
+          <input type="radio" name="medium">
+          <label for="medium">medium</label>
+
+          <input type="radio" name="large">
+          <label for="large">large</label>
+
+      </fieldset>
+
+      <fieldset class="fieldset" id="coffeeimage">
+
+        <label for="coffeeimage">Would you like to share a photo of your favorite coffee?</label>
+        <input type="file" name="coffeeimage">
+        
+      </fieldset>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+
+
+
   </body>
+
 </html>
